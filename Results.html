@@ -33,20 +33,19 @@
 <!-- NAVBAR -->
 <nav class="navbar">
     <a href="index.html" >Home</a>
-    <a href="./latestjob.html" class="active">Latest Jobs</a>
+    <a href="./latestjob.html">Latest Jobs</a>
     <a href="./Admit.html">Admit Card</a>
-    <a href="./Results.html">Results</a>
+    <a href="./Results.html" class="active">Results</a>
     <a href="./University.html">University Update</a>
     <a href="./Sarkari.html">Sarkari Yojana</a>
     <a href="./Scholarship.html">Scholarship</a>
 </nav>
-
 <!-- MAIN CONTENT -->
 <div class="container">
 
     <!-- LEFT SECTION -->
     <div class="left">
-        <div class="section-title">Latest Jobs</div>
+        <div class="section-title">Results List</div>
         <ul class="list" id="admitList">
             <!-- DATA LOADS FROM JSON -->
         </ul>
@@ -92,7 +91,7 @@
 
 <!-- SCRIPT -->
 <script>
-fetch("data/posts.json")
+fetch("data/resultposts.json")
   .then(response => response.json())
   .then(data => {
 
@@ -104,7 +103,7 @@ fetch("data/posts.json")
         // LEFT LIST (Admit Card)
         const li1 = document.createElement("li");
         li1.innerHTML = `
-            <a href="pages/post.html?id=${post.id}">
+            <a href="pages/resultposts.html?id=${post.id}">
                 ${post.title}
             </a>
         `;
@@ -113,7 +112,7 @@ fetch("data/posts.json")
         // RIGHT LIST (Recent Post)
         const li2 = document.createElement("li");
         li2.innerHTML = `
-            <a href="pages/post.html?id=${post.id}">
+            <a href="pages/resultposts.html?id=${post.id}">
                 ${post.title}
             </a>
         `;
