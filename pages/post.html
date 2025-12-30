@@ -212,21 +212,19 @@ footer{
 
     <h2 id="overviewHeading"></h2>
 
-    <table>
-        <tr><th>लेख का नाम</th><td id="articleTitle"></td></tr>
-        <tr><th>लेख का प्रकार</th><td id="articleType"></td></tr>
-        <tr><th>विज्ञापन संख्या</th><td id="advNo"></td></tr>
-        <tr><th>पद का नाम</th><td id="postName"></td></tr>
-        <tr><th>पदों की संख्या</th><td id="totalPosts"></td></tr>
-        <tr><th>अधिसूचना तिथि</th><td id="notificationDate"></td></tr>
-        <tr><th>आवेदन शुरू</th><td id="startDate"></td></tr>
-        <tr><th>आवेदन अंतिम तिथि</th><td id="endDate"></td></tr>
-        <tr><th>आवेदन प्रक्रिया</th><td id="applicationMode"></td></tr>
-        <tr>
-            <th>आधिकारिक वेबसाइट</th>
-            <td><a id="officialWebsite" target="_blank"></a></td>
-        </tr>
-    </table>
+   <table>
+    <tr><th>परीक्षा का नाम</th><td id="examName"></td></tr>
+    <tr><th>संस्था / बोर्ड</th><td id="conductingBody"></td></tr>
+    <tr><th>परीक्षा तिथि</th><td id="examDate"></td></tr>
+    <tr><th>एडमिट कार्ड जारी</th><td id="admitRelease"></td></tr>
+    <tr><th>परीक्षा समय</th><td id="examTime"></td></tr>
+    <tr><th>डाउनलोड मोड</th><td id="downloadMode"></td></tr>
+    <tr>
+        <th>एडमिट कार्ड लिंक</th>
+        <td><a id="officialWebsite" target="_blank">Download Admit Card</a></td>
+    </tr>
+</table>
+
 
     <h2 id="documentsHeading"></h2>
     <p>यदि आप ऑनलाइन आवेदन करना चाहते हैं तो नीचे दिए गए दस्तावेज आवश्यक होंगे –</p>
@@ -264,50 +262,52 @@ const id = new URLSearchParams(window.location.search).get("id");
 fetch("../data/posts.json")
 .then(res => res.json())
 .then(data => {
+
     const post = data.find(p => p.id === id);
     if (!post) return;
 
+    // BASIC CONTENT
     title.innerText = post.title || "";
     postEl = document.getElementById("post");
     postEl.innerText = post.post || "";
-
     description.innerText = post.description || "";
     thumbnail.src = post.thumbnail || "";
 
     overviewHeading.innerText =
-        (post.title || "Post Details") + " : Overview";
+        (post.title || "Admit Card") + " : Overview";
 
-    articleTitle.innerText = post.title || "-";
-    articleType.innerText = post.articleType || "-";
-    advNo.innerText = post.advertisementNumber || "-";
-    postName.innerText = post.postName || "-";
-    totalPosts.innerText = post.totalPosts || "-";
-    notificationDate.innerText = post.notificationDate || "-";
-    startDate.innerText = post.applicationStartDate || "-";
-    endDate.innerText = post.applicationEndDate || "-";
-    applicationMode.innerText = post.applicationMode || "-";
+    // TABLE DATA (ADMIT CARD)
+    examName.innerText = post.examName || "-";
+    conductingBody.innerText = post.conductingBody || "-";
+    examDate.innerText = post.examDate || "-";
+    admitRelease.innerText = post.admitReleaseDate || "-";
+    examTime.innerText = post.examTime || "-";
+    downloadMode.innerText = post.downloadMode || "Online";
 
-    officialWebsite.href = post.officialWebsite || "#";
-    officialWebsite.innerText = post.officialWebsite || "-";
+    officialWebsite.href = post.admitLink || "#";
 
-    documentsHeading.innerText = post.documentsHeading || "Documents Required";
+    // REQUIRED DETAILS
+    documentsHeading.innerText = post.detailsHeading || "Details Required";
     documentsList.innerHTML = "";
-    (post.documents || []).forEach(d => {
+    (post.requiredDetails || []).forEach(d => {
         documentsList.innerHTML += `<li>${d}</li>`;
     });
 
-    selectionHeading.innerText = post.selectionHeading || "Selection Process";
+    // EXAM INSTRUCTIONS
+    selectionHeading.innerText = post.instructionsHeading || "Exam Instructions";
     selectionList.innerHTML = "";
-    (post.selectionProcess || []).forEach(s => {
+    (post.examInstructions || []).forEach(s => {
         selectionList.innerHTML += `<li>${s}</li>`;
     });
 
+    // VIDEO
     if (post.youtube) {
         video.src = post.youtube;
     } else {
         video.style.display = "none";
     }
 
+    // OTHER POSTS (RIGHT SIDEBAR)
     otherPosts.innerHTML = "";
     data.filter(p => p.id !== id).slice(0,6).forEach(p => {
         otherPosts.innerHTML += `
@@ -319,6 +319,7 @@ fetch("../data/posts.json")
             </a>
         </div>`;
     });
+
 });
 </script>
 

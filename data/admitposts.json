@@ -1,52 +1,146 @@
 [
   {
-    "id": "ppu-sem1-2025",
-    "title": "PPU Semester 1 Admit Card 2025",
-    "post": "PPU Semester 1 Admit Card जारी कर दिया गया है। डाउनलोड करने के लिए नीचे दिए गए लिंक पर क्लिक करें।",
-    "startDate": "10 Jan 2025",
-    "endDate": "25 Jan 2025",
-    "eligibility": "Semester 1 Students",
-    "formLink": "https://ppup.ac.in",
-    "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    "id": "bihar-police-constable-admit-2025",
+    "title": "Bihar Police Constable Admit Card 2025",
+    "post": "बिहार पुलिस कांस्टेबल भर्ती परीक्षा 2025 का एडमिट कार्ड जारी कर दिया गया है।",
+    "description": "जो उम्मीदवार इस भर्ती परीक्षा में शामिल होने वाले हैं, वे आधिकारिक वेबसाइट से अपना एडमिट कार्ड डाउनलोड कर सकते हैं।",
+    "thumbnail": "../images/t2.png",
+
+    "articleType": "Admit Card",
+    "advertisementNumber": "BPSSC/Constable/01/2025",
+    "postName": "Police Constable",
+    "totalPosts": "21391",
+    "notificationDate": "10 January 2025",
+    "applicationStartDate": "20 January 2025",
+    "applicationEndDate": "20 February 2025",
+    "applicationMode": "Online",
+
+    "officialWebsite": "https://bpssc.bih.nic.in",
+
+    "documentsHeading": "Admit Card Download हेतु आवश्यक दस्तावेज",
+    "documents": [
+      "Registration Number / Roll Number",
+      "Date of Birth",
+      "Valid Photo ID Proof",
+      "Internet Connection"
+    ],
+
+    "selectionHeading": "परीक्षा प्रक्रिया",
+    "selectionProcess": [
+      "Written Examination",
+      "Physical Efficiency Test (PET)",
+      "Document Verification"
+    ],
+
+    "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "excerpt": "Bihar Police Constable Admit Card 2025 Download Link"
   },
+
   {
-    "id": "csir-ugc-net-2025",
-    "title": "CSIR UGC NET Admit Card 2025",
-    "post": "CSIR UGC NET 2025 का Admit Card जारी कर दिया गया है। इसे डाउनलोड करने के लिए नीचे दिए गए लिंक का उपयोग करें।",
-    "startDate": "05 Feb 2025",
-    "endDate": "20 Feb 2025",
-    "eligibility": "MSc Students or Equivalent",
-    "formLink": "https://csirnet.nta.nic.in",
-    "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    "id": "ssc-gd-admit-2025",
+    "title": "SSC GD Constable Admit Card 2025",
+    "post": "SSC GD कांस्टेबल परीक्षा 2025 का एडमिट कार्ड SSC की आधिकारिक वेबसाइट पर उपलब्ध है।",
+    "description": "उम्मीदवार अपने रीजनल वेबसाइट से एडमिट कार्ड डाउनलोड कर सकते हैं।",
+    "thumbnail": "../images/t2.png",
+
+    "articleType": "Admit Card",
+    "advertisementNumber": "SSC/GD/2025",
+    "postName": "GD Constable",
+    "totalPosts": "84866",
+    "notificationDate": "24 November 2024",
+    "applicationStartDate": "01 December 2024",
+    "applicationEndDate": "31 December 2024",
+    "applicationMode": "Online",
+
+    "officialWebsite": "https://ssc.nic.in",
+
+    "documentsHeading": "एडमिट कार्ड डाउनलोड के लिए जरूरी जानकारी",
+    "documents": [
+      "Registration ID",
+      "Password / Date of Birth",
+      "Captcha Code"
+    ],
+
+    "selectionHeading": "चयन प्रक्रिया",
+    "selectionProcess": [
+      "CBT Exam",
+      "Physical Test",
+      "Medical Examination"
+    ],
+
+    "youtube": "https://www.youtube.com/embed/9bZkp7q19f0",
+    "excerpt": "SSC GD Constable Admit Card 2025"
   },
+
   {
-    "id": "ssc-cpo-2025",
-    "title": "SSC CPO Admit Card 2025",
-    "post": "SSC CPO 2025 Admit Card अब उपलब्ध है। उम्मीदवार अपने Admit Card को डाउनलोड कर सकते हैं।",
-    "startDate": "01 Mar 2025",
-    "endDate": "15 Mar 2025",
-    "eligibility": "Graduates",
-    "formLink": "https://ssc.nic.in",
-    "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    "id": "upsc-cds-admit-2025",
+    "title": "UPSC CDS Admit Card 2025",
+    "post": "संघ लोक सेवा आयोग (UPSC) ने CDS परीक्षा 2025 का एडमिट कार्ड जारी कर दिया है।",
+    "description": "उम्मीदवार UPSC की वेबसाइट से लॉगिन करके एडमिट कार्ड डाउनलोड करें।",
+    "thumbnail": "../images/t2.png",
+
+    "articleType": "Admit Card",
+    "advertisementNumber": "UPSC/CDS/I/2025",
+    "postName": "Combined Defence Services",
+    "totalPosts": "341",
+    "notificationDate": "18 December 2024",
+    "applicationStartDate": "20 December 2024",
+    "applicationEndDate": "10 January 2025",
+    "applicationMode": "Online",
+
+    "officialWebsite": "https://upsc.gov.in",
+
+    "documentsHeading": "प्रवेश पत्र हेतु आवश्यक विवरण",
+    "documents": [
+      "Registration ID",
+      "Date of Birth",
+      "Valid Government ID"
+    ],
+
+    "selectionHeading": "चयन चरण",
+    "selectionProcess": [
+      "Written Exam",
+      "SSB Interview",
+      "Medical Test"
+    ],
+
+    "youtube": "https://www.youtube.com/embed/l482T0yNkeo",
+    "excerpt": "UPSC CDS Admit Card 2025 Download"
   },
+
   {
-    "id": "rrb-groupd-2025",
-    "title": "RRB Group D Admit Card 2025",
-    "post": "RRB Group D 2025 Admit Card जारी कर दिया गया है। परीक्षा के लिए इसे डाउनलोड करना अनिवार्य है।",
-    "startDate": "10 Apr 2025",
-    "endDate": "25 Apr 2025",
-    "eligibility": "10th Pass",
-    "formLink": "https://indianrailways.gov.in",
-    "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-  },
-  {
-    "id": "bihar-police-constable-2025",
-    "title": "Bihar Police Constable PET Admit Card 2025",
-    "post": "Bihar Police Constable PET 2025 Admit Card जारी कर दिया गया है। उम्मीदवार इसे डाउनलोड कर सकते हैं।",
-    "startDate": "15 May 2025",
-    "endDate": "30 May 2025",
-    "eligibility": "10+2 Pass",
-    "formLink": "https://biharpolice.bih.nic.in",
-    "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    "id": "railway-groupd-admit-2025",
+    "title": "Railway Group D Admit Card 2025",
+    "post": "रेलवे ग्रुप D परीक्षा 2025 के लिए एडमिट कार्ड जारी कर दिया गया है।",
+    "description": "उम्मीदवार RRB की आधिकारिक वेबसाइट से अपना प्रवेश पत्र डाउनलोड करें।",
+    "thumbnail": "../images/t2.png",
+
+    "articleType": "Admit Card",
+    "advertisementNumber": "RRB/GroupD/CEN/01/2025",
+    "postName": "Group D",
+    "totalPosts": "103769",
+    "notificationDate": "22 October 2024",
+    "applicationStartDate": "01 November 2024",
+    "applicationEndDate": "30 November 2024",
+    "applicationMode": "Online",
+
+    "officialWebsite": "https://www.rrbcdg.gov.in",
+
+    "documentsHeading": "एडमिट कार्ड के लिए जरूरी चीजें",
+    "documents": [
+      "Registration Number",
+      "Date of Birth",
+      "Photo ID Proof"
+    ],
+
+    "selectionHeading": "चयन प्रक्रिया",
+    "selectionProcess": [
+      "Computer Based Test",
+      "Physical Efficiency Test",
+      "Document Verification"
+    ],
+
+    "youtube": "https://www.youtube.com/embed/3JZ_D3ELwOQ",
+    "excerpt": "Railway Group D Admit Card 2025"
   }
 ]
