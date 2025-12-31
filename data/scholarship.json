@@ -1,22 +1,122 @@
 [
   {
-    "id": "post-matric-scholarship-2025",
-    "title": "Post Matric Scholarship 2025",
-    "post": "Post Matric Scholarship 2025 के लिए आवेदन शुरू। छात्रवृत्ति सभी योग्य छात्रों के लिए उपलब्ध।",
-    "startDate": "01 Jul 2025",
-    "endDate": "31 Aug 2025",
-    "eligibility": "10th / 12th students",
-    "formLink": "https://scholarships.gov.in/post-matric",
-    "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    "id": "scholar1",
+    "title": "पोस्ट मैट्रिक छात्रवृत्ति योजना 2025",
+    "excerpt": "एससी, एसटी और ओबीसी छात्रों के लिए पोस्ट मैट्रिक छात्रवृत्ति योजना।",
+    "thumbnail": "../images/scholarship1.jpg",
+
+    "post": "पोस्ट मैट्रिक छात्रवृत्ति योजना भारत सरकार एवं राज्य सरकार द्वारा चलाई जा रही एक महत्वपूर्ण योजना है। इस योजना का उद्देश्य आर्थिक रूप से कमजोर वर्ग के छात्रों को उच्च शिक्षा प्राप्त करने में सहायता प्रदान करना है।",
+
+    "description": "इस योजना के अंतर्गत कक्षा 11वीं से लेकर पोस्ट ग्रेजुएशन तक पढ़ने वाले छात्र आवेदन कर सकते हैं। पात्र छात्रों को उनकी शिक्षा, हॉस्टल एवं अन्य शैक्षणिक खर्चों के लिए वित्तीय सहायता प्रदान की जाती है।",
+
+    "schemeName": "पोस्ट मैट्रिक छात्रवृत्ति योजना",
+    "schemeType": "राज्य एवं केंद्र सरकार",
+    "beneficiary": "एससी / एसटी / ओबीसी वर्ग के छात्र",
+    "benefitAmount": "₹20,000 से ₹48,000 प्रति वर्ष",
+    "applicationMode": "ऑनलाइन",
+    "startDate": "01 जुलाई 2025",
+    "endDate": "30 सितंबर 2025",
+    "status": "आवेदन चालू",
+
+    "formLink": "https://scholarships.gov.in",
+    "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+
+    "documentsHeading": "आवश्यक दस्तावेज़",
+    "documents": [
+      "आधार कार्ड",
+      "जाति प्रमाण पत्र",
+      "आय प्रमाण पत्र",
+      "पिछली कक्षा की मार्कशीट",
+      "बैंक पासबुक",
+      "पासपोर्ट साइज फोटो"
+    ],
+
+    "selectionHeading": "चयन प्रक्रिया",
+    "selectionProcess": [
+      "ऑनलाइन आवेदन",
+      "दस्तावेज़ सत्यापन",
+      "पात्रता जांच",
+      "छात्रवृत्ति राशि का भुगतान"
+    ]
   },
+
   {
-    "id": "pre-matric-scholarship-2025",
-    "title": "Pre Matric Scholarship 2025",
-    "post": "Pre Matric Scholarship 2025 ऑनलाइन आवेदन प्रक्रिया।",
-    "startDate": "01 Aug 2025",
-    "endDate": "30 Sep 2025",
-    "eligibility": "Class 1-10 students",
-    "formLink": "https://scholarships.gov.in/pre-matric",
-    "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    "id": "scholar2",
+    "title": "बिहार मुख्यमंत्री कन्या उत्थान योजना",
+    "excerpt": "बिहार सरकार द्वारा छात्राओं के लिए विशेष छात्रवृत्ति योजना।",
+    "thumbnail": "../images/scholarship2.jpg",
+
+    "post": "मुख्यमंत्री कन्या उत्थान योजना बिहार सरकार की एक महत्वाकांक्षी योजना है, जिसका उद्देश्य राज्य की बेटियों को शिक्षा के क्षेत्र में आत्मनिर्भर बनाना है।",
+
+    "description": "इस योजना के अंतर्गत छात्राओं को जन्म से लेकर स्नातक पास करने तक विभिन्न चरणों में वित्तीय सहायता प्रदान की जाती है।",
+
+    "schemeName": "मुख्यमंत्री कन्या उत्थान योजना",
+    "schemeType": "राज्य सरकार",
+    "beneficiary": "बिहार की छात्राएं",
+    "benefitAmount": "₹50,000 तक",
+    "applicationMode": "ऑनलाइन",
+    "startDate": "15 जून 2025",
+    "endDate": "31 अक्टूबर 2025",
+    "status": "आवेदन चालू",
+
+    "formLink": "https://medhasoft.bih.nic.in",
+    "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+
+    "documentsHeading": "आवश्यक दस्तावेज़",
+    "documents": [
+      "आधार कार्ड",
+      "निवास प्रमाण पत्र",
+      "जन्म प्रमाण पत्र",
+      "शैक्षणिक प्रमाण पत्र",
+      "बैंक खाता विवरण"
+    ],
+
+    "selectionHeading": "चयन प्रक्रिया",
+    "selectionProcess": [
+      "ऑनलाइन पंजीकरण",
+      "डेटा सत्यापन",
+      "सरकारी रिकॉर्ड से मिलान",
+      "राशि का DBT के माध्यम से भुगतान"
+    ]
+  },
+
+  {
+    "id": "scholar3",
+    "title": "नेशनल स्कॉलरशिप पोर्टल (NSP) योजना",
+    "excerpt": "देशभर के छात्रों के लिए केंद्र सरकार की छात्रवृत्ति योजना।",
+    "thumbnail": "../images/scholarship3.jpg",
+
+    "post": "नेशनल स्कॉलरशिप पोर्टल भारत सरकार द्वारा संचालित एक केंद्रीकृत प्लेटफॉर्म है, जहां विभिन्न छात्रवृत्ति योजनाओं के लिए आवेदन किया जा सकता है।",
+
+    "description": "इस पोर्टल के माध्यम से अल्पसंख्यक, एससी, एसटी, ओबीसी एवं सामान्य वर्ग के छात्र विभिन्न योजनाओं का लाभ उठा सकते हैं।",
+
+    "schemeName": "नेशनल स्कॉलरशिप पोर्टल योजना",
+    "schemeType": "केंद्र सरकार",
+    "beneficiary": "सभी पात्र छात्र",
+    "benefitAmount": "₹10,000 से ₹75,000 तक",
+    "applicationMode": "ऑनलाइन",
+    "startDate": "01 अगस्त 2025",
+    "endDate": "30 नवंबर 2025",
+    "status": "जल्द शुरू होगा",
+
+    "formLink": "https://scholarships.gov.in",
+    "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+
+    "documentsHeading": "आवश्यक दस्तावेज़",
+    "documents": [
+      "आधार कार्ड",
+      "बैंक खाता",
+      "संस्थान प्रमाण पत्र",
+      "आय प्रमाण पत्र",
+      "पिछली कक्षा का परिणाम"
+    ],
+
+    "selectionHeading": "चयन प्रक्रिया",
+    "selectionProcess": [
+      "ऑनलाइन आवेदन",
+      "संस्थान द्वारा सत्यापन",
+      "राज्य/केंद्र स्तर पर जांच",
+      "छात्रवृत्ति का भुगतान"
+    ]
   }
 ]

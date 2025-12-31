@@ -1,140 +1,83 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Update STM – Post Details</title>
-    <link rel="stylesheet" href="latestjob.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sarkari Yojana | Online Update STM</title>
 
-    <style>
-        /* Basic styling */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-        }
-
-        header {
-            background-color: #d40000;
-            color: white;
-            padding: 15px 20px;
-            text-align: center;
-        }
-
-        nav.navbar {
-            display: flex;
-            background-color: #333;
-            padding: 10px 20px;
-        }
-
-        nav.navbar a {
-            color: white;
-            margin-right: 15px;
-            text-decoration: none;
-            padding: 5px 10px;
-        }
-
-        nav.navbar a:hover,
-        nav.navbar a.active {
-            background-color: #d40000;
-            border-radius: 4px;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 1200px;
-            margin: 20px auto;
-            gap: 20px;
-            padding: 0 20px;
-        }
-
-        .left {
-            flex: 3;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        .right {
-            flex: 1;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            max-height: fit-content;
-        }
-
-        h1, h2 {
-            color: #d40000;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-
-        table th, table td {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: left;
-        }
-
-        iframe {
-            margin-top: 20px;
-            border-radius: 8px;
-        }
-
-        ul.list {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul.list li {
-            margin-bottom: 10px;
-        }
-
-        ul.list li a {
-            text-decoration: none;
-            color: #333;
-        }
-
-        ul.list li a:hover {
-            color: #d40000;
-            text-decoration: underline;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 15px 20px;
-            margin-top: 40px;
-        }
-
-        @media(max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
-        }
-    </style>
+<style>
+:root{
+    --primary:#d40000;
+    --dark:#333;
+    --light:#f9f9f9;
+    --border:#e0e0e0;
+}
+*{box-sizing:border-box}
+body{
+    font-family:"Segoe UI",Arial,sans-serif;
+    background:var(--light);
+    margin:0;color:#222;line-height:1.7;
+}
+header{
+    background:var(--primary);
+    color:#fff;padding:18px 12px;text-align:center;
+}
+nav{
+    background:var(--dark);
+    padding:10px;
+    display:flex;flex-wrap:wrap;justify-content:center;
+}
+nav a{
+    color:#fff;margin:4px 6px;text-decoration:none;
+    padding:6px 12px;border-radius:4px;font-size:14px;
+}
+nav a:hover,nav a.active{background:var(--primary)}
+.container{
+    max-width:1200px;margin:20px auto;
+    display:flex;gap:20px;padding:0 15px;
+}
+.left{flex:3;background:#fff;padding:22px;border-radius:8px}
+.right{flex:1;background:#fff;padding:18px;border-radius:8px}
+h1{color:var(--primary);font-size:26px}
+h2{
+    color:var(--primary);margin-top:30px;
+    font-size:20px;border-left:4px solid var(--primary);
+    padding-left:10px;
+}
+table{
+    width:100%;border-collapse:collapse;margin-top:15px;
+}
+th,td{
+    border:1px solid var(--border);
+    padding:10px;font-size:14px;
+}
+th{background:#f5f5f5;width:40%}
+.other-post{
+    border-bottom:1px solid var(--border);
+    padding:10px 0;
+}
+.other-post a{text-decoration:none;color:#222}
+.other-post a:hover{color:var(--primary)}
+iframe{margin-top:25px;border-radius:8px}
+footer{
+    background:var(--dark);
+    color:#fff;text-align:center;
+    padding:15px;margin-top:40px;font-size:14px;
+}
+@media(max-width:900px){
+    .container{flex-direction:column}
+}
+</style>
 </head>
+
 <body>
 
-<!-- HEADER -->
 <header>
-    <div class="logo">
-        <h1>Online Update STM</h1>
-        <p>बिहार का एक मात्र विश्वसनीय वेबसाइट</p>
-    </div>
+    <h4>Online Update STM</h4>
+    <p>भारत की सभी सरकारी योजनाओं की जानकारी</p>
 </header>
 
-<!-- NAVBAR -->
-<nav class="navbar">
+<nav>
     <a href="../index.html">Home</a>
     <a href="../latestjob.html">Latest Jobs</a>
     <a href="../Admit.html">Admit Card</a>
@@ -144,110 +87,99 @@
     <a href="../Scholarship.html">Scholarship</a>
 </nav>
 
-<!-- MAIN CONTENT -->
 <div class="container">
 
-    <!-- LEFT: Post Content -->
-    <div class="left">
-        <h1 id="title"></h1>
-        <p id="post"></p>
+<!-- LEFT -->
+<div class="left">
 
-        <!-- Table -->
-        <table>
-            <tr><th>Start Date</th><td id="start"></td></tr>
-            <tr><th>End Date</th><td id="end"></td></tr>
-            <tr><th>Eligibility</th><td id="eligibility"></td></tr>
-            <tr>
-                <th>Form Link</th>
-                <td><a id="formLink" target="_blank">Apply Here</a></td>
-            </tr>
-        </table>
+    <h1 id="title"></h1>
+    <p id="post"></p>
 
-        <!-- YouTube Video -->
-        <iframe
-            id="video"
-            width="100%"
-            height="315"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
-    </div>
+    <h2>Yojana Details</h2>
 
-    <!-- RIGHT: Recent Updates -->
-    <div class="right">
-        <h2>Recent Updates</h2>
-        <ul class="list" id="recentList">
-            <!-- Recent updates loaded from JSON -->
-        </ul>
-    </div>
+    <table>
+        <tr><th>Scheme Name</th><td id="schemeName"></td></tr>
+        <tr><th>Scheme Type</th><td id="schemeType"></td></tr>
+        <tr><th>Beneficiary</th><td id="beneficiary"></td></tr>
+        <tr><th>Benefit Amount</th><td id="benefitAmount"></td></tr>
+        <tr><th>Application Mode</th><td id="applicationMode"></td></tr>
+        <tr><th>Required Documents</th><td id="documents"></td></tr>
+        <tr><th>Scheme Status</th><td id="status"></td></tr>
+        <tr><th>Objective</th><td id="objective"></td></tr>
+        <tr><th>Launched By</th><td id="launchedBy"></td></tr>
+        <tr><th>State</th><td id="state"></td></tr>
+        <tr><th>Helpline Number</th><td id="helpline"></td></tr>
+        <tr>
+            <th>Apply Link</th>
+            <td><a id="formLink" target="_blank">Apply Here</a></td>
+        </tr>
+    </table>
+
+    <iframe id="video" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
 
 </div>
 
-<!-- FOOTER -->
+<!-- RIGHT -->
+<div class="right">
+    <h2>Other Sarkari Yojana</h2>
+    <div id="otherPosts"></div>
+</div>
+
+</div>
+
 <footer>
-    <p>Disclaimer | Privacy Policy | About Us | Contact Us</p>
-    <p>Copyright © 2025 onlineupdatestm.in</p>
+    <p>© 2025 onlineupdatestm.in</p>
 </footer>
 
-<!-- SCRIPT -->
 <script>
-const params = new URLSearchParams(window.location.search);
-const postId = params.get("id");
+const id = new URLSearchParams(window.location.search).get("id");
 
-fetch("../data/sarkariposts.json") // Make sure this path is correct relative to post.html
-  .then(res => res.json())
-  .then(data => {
-    // Find the post by ID
-    const post = data.find(p => p.id === postId);
+fetch("../data/sarkariposts.json")
+.then(res => res.json())
+.then(data => {
 
-    if (!post) {
-        document.getElementById("title").innerText = "Post Not Found";
-        document.getElementById("post").innerText = "The requested post does not exist.";
-        return;
-    }
+    const postData = data.find(p => p.id === id);
+    if (!postData) return;
 
-    // Set Post content
-    document.getElementById("title").innerText = post.title || "";
-    document.getElementById("post").innerText = post.post || "";
+    title.innerText = postData.title;
+    post.innerText = postData.post;
 
-    // Set Table content safely
-    document.getElementById("start").innerText = post.startDate || "-";
-    document.getElementById("end").innerText = post.endDate || "-";
-    document.getElementById("eligibility").innerText = post.eligibility || "-";
+    schemeName.innerText = postData.schemeName || "-";
+    schemeType.innerText = postData.schemeType || "-";
+    beneficiary.innerText = postData.beneficiary || "-";
+    benefitAmount.innerText = postData.benefitAmount || "-";
+    applicationMode.innerText = postData.applicationMode || "-";
+    documents.innerText = postData.documents || "-";
+    status.innerText = postData.status || "-";
+    objective.innerText = postData.objective || "-";
+    launchedBy.innerText = postData.launchedBy || "-";
+    state.innerText = postData.state || "-";
+    helpline.innerText = postData.helpline || "-";
 
-    // Form Link
-    const formLink = document.getElementById("formLink");
-    if (post.formLink) {
-        formLink.href = post.formLink;
-        formLink.innerText = "Apply Here";
+    if (postData.formLink) {
+        formLink.href = postData.formLink;
     } else {
-        formLink.remove();
+        formLink.style.display = "none";
     }
 
-    // YouTube Video
-    const video = document.getElementById("video");
-    if (post.youtube) {
-        video.src = post.youtube;
+    if (postData.youtube) {
+        video.src = postData.youtube;
     } else {
         video.style.display = "none";
     }
 
-    // Populate Recent Updates
-    const recentList = document.getElementById("recentList");
-    data.forEach(p => {
-        const li = document.createElement("li");
-        li.innerHTML = `<a href="post.html?id=${p.id}">${p.title}</a>`;
-        recentList.appendChild(li);
+    otherPosts.innerHTML = "";
+    data.filter(p => p.id !== id).forEach(p => {
+        otherPosts.innerHTML += `
+        <div class="other-post">
+            <a href="sarkariposts.html?id=${p.id}">
+                <strong>${p.title}</strong>
+            </a>
+        </div>`;
     });
 
-  })
-  .catch(error => {
-    console.error("Error loading posts.json:", error);
-    document.getElementById("title").innerText = "Error loading post";
-    document.getElementById("post").innerText = "Please try again later.";
-  });
+});
 </script>
-
 
 </body>
 </html>
