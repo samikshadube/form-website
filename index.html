@@ -4,343 +4,322 @@
     <meta charset="UTF-8">
     <title>Superfast Online</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        body { font-family: Arial, sans-serif; background:#f5f5f5; }
+
+        /* ===== SEARCH BAR ===== */
+        .search-bar{
+            max-width:1200px;
+            margin:15px auto;
+            padding:0 15px;
+            text-align:center;
+        }
+        .search-bar input{
+            width:100%;
+            max-width:500px;
+            padding:10px 14px;
+            border:1px solid #ccc;
+            border-radius:6px;
+            font-size:15px;
+        }
+
+        /* ===== SLIDER ===== */
+        .slider{
+            max-width:1200px;
+            margin:20px auto;
+            border-radius:16px;
+            overflow:hidden;
+        }
+        .slider img{
+            width:65%;
+            display:none;
+        }
+        .slider img.active{
+            display:block;
+        }
+
+        .section {
+            margin: 30px auto;
+            max-width: 1200px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .section h2 {
+            background: #d40000;
+            color: #fff;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            padding: 12px;
+            border-radius: 6px;
+            background: #fafafa;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            transform: translateY(-3px);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+
+        .view-more {
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        .view-more a {
+            color: #d40000;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+               /* ===== FOOTER ===== */
+.site-footer {
+    background: #111;
+    color: #ccc;
+    padding-top: 40px;
+    font-size: 14px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 20px 30px;
+}
+
+.footer-col h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 18px;
+    position: relative;
+}
+
+.footer-col h3::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background: #d40000;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+.footer-col p {
+    line-height: 1.6;
+    color: #bbb;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #d40000;
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    background: #000;
+    text-align: center;
+    padding: 12px;
+    font-size: 13px;
+    color: #aaa;
+    border-top: 1px solid #222;
+}
+
+    </style>
 </head>
+
 <body>
 
-<!-- HEADER -->
+<!-- HEADER (unchanged) -->
 <header class="header">
     <div class="logo"><h1>SUPERFAST ONLINE</h1></div>
     <p class="tagline">बिहार का एक मात्र विश्वसनीय वेबसाइट</p>
 </header>
 
-<!-- NAVBAR -->
+<!-- NAVBAR (unchanged) -->
 <nav class="navbar">
-    <a href="./index.html" class="active">Home</a>
-    <a href="./latestjob.html">Latest Jobs</a>
-    <a href="./Admit.html" >Admit Card</a>
-    <a href="./Results.html">Results</a>
-    <a href="./University.html">University Update</a>
-    <a href="./Sarkari.html">Sarkari Yojana</a>
-    <a href="./Scholarship.html">Scholarship</a>
+    <a href="index.html" class="active">Home</a>
+    <a href="latestjob.html">Latest Jobs</a>
+    <a href="Admit.html">Admit Card</a>
+    <a href="Results.html">Results</a>
+    <a href="University.html">University Update</a>
+    <a href="Sarkari.html">Sarkari Yojana</a>
+    <a href="Scholarship.html">Scholarship</a>
 </nav>
 
-<!-- SEARCH -->
-<div class="search-area">
-    <input type="text" placeholder="Search jobs, result etc...">
-    <button>🔍</button>
+<!-- 🔍 SEARCH BAR (NEW) -->
+<div class="search-bar">
+    <input type="text" id="searchInput" placeholder="यहाँ खोजें (Job / Result / Admit / Yojana)">
 </div>
 
-<!-- SOCIAL BUTTONS -->
-<div class="social-area">
-    <a class="yt">Our YouTube Channel</a>
-    <a class="wa">Join Whatsapp Channel</a>
-    <a class="tg">Join Us On Telegram</a>
+<!-- 🖼️ SLIDER (NEW) -->
+<div class="slider">
+    <img src="images/slide1.png" class="active">
+    <img src="images/slide2.png">
+    <img src="images/slide3.png">
 </div>
 
-<!-- QUICK LINKS -->
-<div class="quick-links">
-    <div>CSC ID REGISTRATION 2025<br>ऑनलाइन आवेदन करें</div>
-    <div>जाति, निवास, आय APPLY<br>& DOWNLOAD करें</div>
-    <div>बिहार राशन कार्ड 2025<br>ऑनलाइन अप्लाई ऐसे करें</div>
-    <div>BIHAR POST MATRIC<br>SCHOLARSHIP 2025 APPLY</div>
-
-    <div>VOTER ENUMERATION 2025<br>ONLINE APPLY</div>
-    <div>बिहार चुनाव LIVE रिजल्ट 2025<br>यहाँ से देखें</div>
-    <div>बिहार के सभी यूनिवर्सिटी<br>ऑनलाइन आवेदन</div>
-    <div>BIHAR BOARD 10TH PASS<br>SCHOLARSHIP 2024</div>
+<!-- ===== YOUR EXISTING SECTIONS (UNCHANGED) ===== -->
+<div class="section">
+    <h2>Admit Card</h2>
+    <div class="card-grid" id="admitCards"></div>
+    <div class="view-more"><a href="Admit.html">View More →</a></div>
 </div>
 
-<!-- THREE COLUMNS -->
-<div class="three-box">
-
-    <div class="box">
-        <h2>Latest Update</h2>
-        <ul class="list" id="admitList">
-            <li>RRB Exam Calendar 2026 जारी</li>
-            <li>Bihar DElEd Admission 2026</li>
-            <li>Bihar D.El.Ed Counselling 2025</li>
-            <li>Bihar D.El.Ed 1st Allotment 2025</li>
-            <li>RRB Exam Calendar 2026 जारी</li>
-            <li>Bihar DElEd Admission 2026</li>
-            <li>Bihar D.El.Ed Counselling 2025</li>
-            <li>Bihar D.El.Ed 1st Allotment 2025</li>
-            <li>RRB Exam Calendar 2026 जारी</li>
-            <li>Bihar DElEd Admission 2026</li>
-            <li>Bihar D.El.Ed Counselling 2025</li>
-            <li>Bihar D.El.Ed 1st Allotment 2025</li>
-            <li>Bihar D.El.Ed Counselling 2025</li>
-            <li>Bihar D.El.Ed 1st Allotment 2025</li>
-            <li>Bihar D.El.Ed Counselling 2025</li>
-            <li><button>Load More</button></li>
-        </ul>
-    </div>
-
-    <div class="box">
-        <h2>Latest Jobs</h2>
-        <ul class="list" id="admitList">
-            <li>Assam Police Vacancy 2025 – 102 Post</li>
-            <li>BTSC Pump Operator Vacancy 2025</li>
-            <li>India Post GDS Vacancy 2026</li>
-            <li>Railway Group D Vacancy 2026</li>
-            <li>Assam Police Vacancy 2025 – 102 Post</li>
-            <li>BTSC Pump Operator Vacancy 2025</li>
-            <li>India Post GDS Vacancy 2026</li>
-            <li>Railway Group D Vacancy 2026</li>  <li>Assam Police Vacancy 2025 – 102 Post</li>
-            <li>BTSC Pump Operator Vacancy 2025</li>
-            <li>India Post GDS Vacancy 2026</li>
-            <li>Railway Group D Vacancy 2026</li>
-             <li>India Post GDS Vacancy 2026</li>
-            <li>Railway Group D Vacancy 2026</li>
-            <li>Railway Group D Vacancy 2026</li>
-            <li><button>Load More</button></li>
-
-        </ul>
-    </div>
-
-    <div class="box">
-        <h2>Sarkari Yojana</h2>
-        <ul class="list" id="admitList">
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li>PM Awas Yojana Update</li>
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li>PM Awas Yojana Update</li>
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li>PM Awas Yojana Update</li>
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li><button>Load More</button></li>
-        </ul>
-    </div>
-     <div class="box">
-        <h2>Admit Card</h2>
-        <ul class="list" id="admitList">
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li>PM Awas Yojana Update</li>
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li>PM Awas Yojana Update</li>
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li>PM Awas Yojana Update</li>
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li><button>Load More</button></li>
-        </ul>
-    </div>
-     <div class="box">
-        <h2>Results</h2>
-        <ul class="list" id="admitList">
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li>PM Awas Yojana Update</li>
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li>PM Awas Yojana Update</li>
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li>PM Awas Yojana Update</li>
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li><button>Load More</button></li>
-        </ul>
-    </div>
-     <div class="box">
-        <h2>Admission</h2>
-        <ul class="list" id="admitList">
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li>PM Awas Yojana Update</li>
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li>PM Awas Yojana Update</li>
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li>PM Awas Yojana Update</li>
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li><button>View More</button></li>
-        </ul>
-    </div>
-     <div class="box">
-        <h2>Scholarship</h2>
-        <ul class="list" id="admitList">
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li>PM Awas Yojana Update</li>
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li>PM Awas Yojana Update</li>
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li>PM Awas Yojana Update</li>
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li><button>View More</button></li>
-        </ul>
-    </div>
-     <div class="box">
-        <h2>University Update</h2>
-        <ul class="list" id="admitList">
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li>PM Awas Yojana Update</li>
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li>PM Awas Yojana Update</li>
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li>PM Awas Yojana Update</li>
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li><button>Load More</button></li>
-        </ul>
-    </div>
-     <div class="box">
-        <h2>Other</h2>
-        <ul class="list" id="admitList">
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li>PM Awas Yojana Update</li>
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li>PM Awas Yojana Update</li>
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li>PM Awas Yojana Update</li>
-            <li>PM Rail Kaushal Vikas Yojana 2025</li>
-            <li>NREGA Job Card Online Apply 2025</li>
-            <li>Bihar Yodha Puraskar Yojana 2025</li>
-            <li><button>View More</button></li>
-        </ul>
-    </div>
-
+<div class="section">
+    <h2>Latest Jobs</h2>
+    <div class="card-grid" id="jobCards"></div>
+    <div class="view-more"><a href="latestjob.html">View More →</a></div>
 </div>
 
-<!-- DISCLAIMER SECTION -->
-<div class="disclaimer-wrapper">
-
-    <h2 class="disclaimer-heading">Disclaimer for Online Update STM.IN</h2>
-
-    <p><strong>प्रिय पाठकगण,</strong></p>
-
-    <p>
-        <strong>onlineupdatestm.in</strong> एक सरकारी वेबसाइट नहीं है और इसका किसी सरकारी मंत्रालय या विभाग से
-        कोई संबंध नहीं है।
-    </p>
-
-    <p>
-        यह ब्लॉग एक व्यक्तिगत प्रयास है, जिसे उन लोगों की सहायता के लिए बनाया गया है जो सरकारी योजनाओं और
-        अन्य शैक्षिक जानकारियों के बारे में सटीक और अपडेटेड जानकारी प्राप्त करना चाहते हैं।
-        हमारी टीम यह सुनिश्चित करने का प्रयास करती है कि हर लेख में आपको सटीक जानकारी मिले,
-        लेकिन हम त्रुटियों की संभावना से इंकार नहीं कर सकते।
-    </p>
-
-    <p>
-        हमारे सभी लेखों में संबंधित योजना की <strong>आधिकारिक वेबसाइट</strong> का लिंक दिया गया है और
-        हम आपसे अनुरोध करते हैं कि जानकारी को सत्यापित करने के लिए हमेशा आधिकारिक वेबसाइट का ही संदर्भ लें।
-        यदि आपको किसी लेख में कोई त्रुटि मिले, तो कृपया हमें सूचित करें ताकि हम उसे सुधार सकें।
-    </p>
-
-    <p>
-        इस वेबसाइट के माध्यम से कभी भी किसी प्रकार की <strong>पैसे की मांग नहीं</strong> की जाती।
-        यह वेबसाइट पूर्णतः <strong>निःशुल्क सूचना</strong> प्रदान करती है।
-        हमारा उद्देश्य केवल जानकारी को सरल तरीके से आप तक पहुँचाना है।
-        कृपया किसी भी निर्णय से पहले जानकारी की स्वयं जाँच अवश्य करें।
-    </p>
-
-    <hr>
-
-    <h1 class="sub-heading">
-        onlineupdatestm.in पर प्रदान की जाने वाली जानकारियों का स्रोत / Source क्या है?
-    </h1>
-
-    <ul class="disclaimer-list">
-        <li>
-            onlineupdatestm.in पर प्रकाशित सभी जानकारियाँ पूरी जिम्मेदारी और सावधानी के साथ प्रस्तुत की जाती हैं।
-        </li>
-        <li>
-            किसी भी प्रकार की सूचना बिना पुख्ता प्रमाण (Solid Evidence) के प्रकाशित नहीं की जाती।
-        </li>
-        <li>
-            प्रत्येक लेख का स्रोत संबंधित विभाग की
-            <strong>Official Website, Print Media, Authenticated News Paper Cutting</strong>
-            एवं अन्य 100% विश्वसनीय स्रोत होते हैं।
-        </li>
-        <li>
-            हर लेख के अंत में <strong>Quick Links</strong> दिए जाते हैं, जिससे आप
-            Official Source, Advertisement, Direct Application Link तक पहुँच सकें।
-        </li>
-    </ul>
-
-    <hr>
-
-    <h3 class="sub-heading">
-        क्या onlineupdatestm.in अपनी वेबसाइट पर प्रकाशित सामग्री / Content की जिम्मेदारी लेता है?
-    </h3>
-
-    <ul class="disclaimer-list">
-        <li>
-            हमारा पूरा प्रयास रहता है कि आपको 100% शुद्ध एवं प्रमाणिक जानकारी प्रदान की जाए।
-        </li>
-        <li>
-            फिर भी हम आपसे अनुरोध करते हैं कि किसी भी महत्वपूर्ण निर्णय से पहले
-            जानकारी को अपने स्तर पर सत्यापित अवश्य करें।
-        </li>
-        <li>
-            onlineupdatestm.in केवल एक सूचना प्रदान करने वाला प्लेटफॉर्म है,
-            अंतिम निर्णय लेने से पहले आधिकारिक वेबसाइट पर जानकारी की पुष्टि करना आवश्यक है।
-        </li>
-    </ul>
-
+<div class="section">
+    <h2>Results</h2>
+    <div class="card-grid" id="resultCards"></div>
+    <div class="view-more"><a href="Results.html">View More →</a></div>
 </div>
 
-</body>
-</html>
+<div class="section">
+    <h2>University Update</h2>
+    <div class="card-grid" id="universityCards"></div>
+    <div class="view-more"><a href="University.html">View More →</a></div>
+</div>
+
+<div class="section">
+    <h2>Sarkari Yojana</h2>
+    <div class="card-grid" id="sarkariCards"></div>
+    <div class="view-more"><a href="Sarkari.html">View More →</a></div>
+</div>
+
+<div class="section">
+    <h2>Scholarship</h2>
+    <div class="card-grid" id="scholarshipCards"></div>
+    <div class="view-more"><a href="Scholarship.html">View More →</a></div>
+</div>
 
 <!-- FOOTER -->
-<footer >
-    <div class="footer-section">
-    <p>Disclaimer</p>
-    <p>Privacy Policy</p>
-    <p>About Us</p>
-    <p>Contact Us</p>
-    <p>Copyright © 2025 onlineupdatestm.in</p>
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <!-- LEFT -->
+        <div class="footer-col">
+            <h3>Superfast Online</h3>
+            <p>
+                Superfast Online एक सूचना आधारित प्लेटफॉर्म है, जहाँ
+                सरकारी नौकरी, रिजल्ट, एडमिट कार्ड, योजना और स्कॉलरशिप
+                से जुड़ी सटीक व अपडेटेड जानकारी प्रदान की जाती है।
+            </p>
+        </div>
+
+        <!-- MIDDLE -->
+        <div class="footer-col">
+            <h3>महत्वपूर्ण लिंक</h3>
+            <ul>
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="latestjob.html">Latest Jobs</a></li>
+                <li><a href="Admit.html">Admit Card</a></li>
+                <li><a href="Results.html">Results</a></li>
+                <li><a href="Sarkari.html">Sarkari Yojana</a></li>
+                <li><a href="Scholarship.html">Scholarship</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+        © 2025 <strong>onlineupdatestm.in</strong> | All Rights Reserved
     </div>
 </footer>
 
 
+<!-- ===== SCRIPT ===== -->
+<script>
+/* CARD LOAD (UNCHANGED) */
+function loadCards(jsonFile, containerId, page) {
+    fetch(jsonFile)
+    .then(res => res.json())
+    .then(data => {
+        const box = document.getElementById(containerId);
+        data.slice(0,6).forEach(post => {
+            const div = document.createElement("div");
+            div.className = "card searchable";
+            div.innerHTML = `<a href="pages/${page}?id=${post.id}">${post.title}</a>`;
+            box.appendChild(div);
+        });
+    });
+}
 
+loadCards("data/admitposts.json","admitCards","admitposts.html");
+loadCards("data/posts.json","jobCards","jobposts.html");
+loadCards("data/resultposts.json","resultCards","resultposts.html");
+loadCards("data/universityposts.json","universityCards","universityposts.html");
+loadCards("data/sarkariposts.json","sarkariCards","sarkariposts.html");
+loadCards("data/scholarship.json","scholarshipCards","scholarshipposts.html");
+
+/* 🔍 SEARCH FUNCTION */
+document.getElementById("searchInput").addEventListener("keyup", function(){
+    const value = this.value.toLowerCase();
+    document.querySelectorAll(".searchable").forEach(card=>{
+        card.style.display = card.innerText.toLowerCase().includes(value)
+            ? "block" : "none";
+    });
+});
+
+/* 🖼️ SLIDER */
+let slideIndex = 0;
+const slides = document.querySelectorAll(".slider img");
+setInterval(()=>{
+    slides.forEach(img=>img.classList.remove("active"));
+    slides[slideIndex].classList.add("active");
+    slideIndex = (slideIndex + 1) % slides.length;
+}, 3000);
+</script>
 
 </body>
 </html>
