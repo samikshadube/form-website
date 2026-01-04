@@ -260,6 +260,7 @@
 
 
 <!-- SCRIPT -->
+
 <script>
 fetch("data/admitposts.json")
   .then(response => response.json())
@@ -268,9 +269,9 @@ fetch("data/admitposts.json")
     const admitList = document.getElementById("admitList");
     const recentList = document.getElementById("recentList");
 
-    data.forEach(post => {
+    data.forEach((post, index) => {
 
-        // LEFT LIST (Admit Card)
+        /* ===== LEFT LIST (NO LIMIT) ===== */
         const li1 = document.createElement("li");
         li1.innerHTML = `
             <a href="pages/admitposts.html?id=${post.id}">
@@ -279,14 +280,16 @@ fetch("data/admitposts.json")
         `;
         admitList.appendChild(li1);
 
-        // RIGHT LIST (Recent Post)
-        const li2 = document.createElement("li");
-        li2.innerHTML = `
-            <a href="pages/admitposts.html?id=${post.id}">
-                ${post.title}
-            </a>
-        `;
-        recentList.appendChild(li2);
+        /* ===== RIGHT LIST (LIMIT 5) ===== */
+        if(index < 5){
+            const li2 = document.createElement("li");
+            li2.innerHTML = `
+                <a href="pages/admitposts.html?id=${post.id}">
+                    ${post.title}
+                </a>
+            `;
+            recentList.appendChild(li2);
+        }
     });
 
   })
@@ -294,6 +297,7 @@ fetch("data/admitposts.json")
     console.error("Error loading data:", error);
   });
 </script>
+
 
 </body>
 </html>

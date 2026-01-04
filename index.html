@@ -1,99 +1,146 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <title>Superfast Online</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Superfast Online</title>
+<link rel="stylesheet" href="style.css">
 
-    <style>
-        body { font-family: Arial, sans-serif; background:#f5f5f5; }
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+    margin:0;
+}
 
-        /* ===== SEARCH BAR ===== */
-        .search-bar{
-            max-width:1200px;
-            margin:15px auto;
-            padding:0 15px;
-            text-align:center;
-        }
-        .search-bar input{
-            width:100%;
-            max-width:500px;
-            padding:10px 14px;
-            border:1px solid #ccc;
-            border-radius:6px;
-            font-size:15px;
-        }
+/* ===== SOCIAL BAR ===== */
+.social-bar{
+    max-width:1200px;
+    margin:10px auto 5px;
+    padding:0 15px;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+.social-bar a{
+    text-decoration:none;
+    color:#fff;
+    font-size:13px;
+    font-weight:600;
+    padding:6px 14px;
+    border-radius:4px;
+    transition:.3s;
+}
+.social-bar .whatsapp{ background:#25D366; }
+.social-bar .youtube{ background:#FF0000; }
+.social-bar .telegram{ background:#0088cc; }
+.social-bar a:hover{
+    opacity:.85;
+    transform:translateY(-1px);
+}
 
-        /* ===== SLIDER ===== */
-        .slider{
-            max-width:1200px;
-            margin:20px auto;
-            border-radius:16px;
-            overflow:hidden;
-        }
-        .slider img{
-            width:65%;
-            display:none;
-        }
-        .slider img.active{
-            display:block;
-        }
+/* ===== SEARCH BAR ===== */
+.search-bar{
+    max-width:1200px;
+    margin:10px auto;
+    padding:0 15px;
+    text-align:center;
+}
+.search-bar input{
+    width:100%;
+    max-width:500px;
+    padding:11px 14px;
+    border:1px solid #bbb;
+    border-radius:6px;
+    font-size:15px;
+}
 
-        .section {
-            margin: 30px auto;
-            max-width: 1200px;
-            background: #fff;
-            padding: 15px;
-            border-radius: 8px;
-        }
+/* ===== SLIDER ===== */
+.slider{
+    max-width:1200px;
+    margin:20px auto;
+    border-radius:10px;
+    overflow:hidden;
+}
+.slider img{
+    width:100%;
+    display:none;
+}
+.slider img.active{
+    display:block;
+}
 
-        .section h2 {
-            background: #d40000;
-            color: #fff;
-            padding: 10px;
-            font-size: 20px;
-            border-radius: 5px;
-        }
+/* ===== 3 COLUMN LAYOUT ===== */
+.triple-section{
+    max-width:1200px;
+    margin:20px auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+}
 
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
-            gap: 15px;
-            margin-top: 15px;
-        }
+/* ===== SECTION BOX ===== */
+.section-box{
+    background:#fff;
+    border:1px solid #0a74ff;
+}
 
-        .card {
-            border: 1px solid #ddd;
-            padding: 12px;
-            border-radius: 6px;
-            background: #fafafa;
-            transition: 0.3s;
-        }
+/* ===== SECTION TITLE ===== */
+.section-box h2{
+    background:#0a74ff;
+    color:#fff;
+    font-size:16px;
+    padding:9px;
+    margin:0;
+    text-align:center;
+}
 
-        .card:hover {
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-            transform: translateY(-3px);
-        }
+/* ===== CARD STYLE ===== */
+.card{
+    padding:7px 10px;
+    border-bottom:1px dotted #ccc;
+    transition:.25s;
+}
+.card:last-child{ border-bottom:none; }
 
-        .card a {
-            text-decoration: none;
-            color: #000;
-            font-weight: bold;
-            line-height: 1.4;
-        }
+.card a{
+    text-decoration:none;
+    color:#000;
+    font-size:13.5px;
+    font-weight:600;
+    line-height:1.4;
+    display:block;
+}
 
-        .view-more {
-            text-align: right;
-            margin-top: 10px;
-        }
+.card:hover{
+    background:#f1f6ff;
+}
+.card:hover a{
+    color:#0a74ff;
+    padding-left:4px;
+}
 
-        .view-more a {
-            color: #d40000;
-            font-weight: bold;
-            text-decoration: none;
-        }
+/* ===== VIEW MORE ===== */
+.view-more{
+    text-align:right;
+    padding:6px 8px;
+}
+.view-more a{
+    text-decoration:none;
+    font-size:13px;
+    color:#d40000;
+    font-weight:bold;
+}
 
-               /* ===== FOOTER ===== */
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+    .triple-section{ grid-template-columns:repeat(2,1fr); }
+}
+@media(max-width:600px){
+    .triple-section{ grid-template-columns:1fr; }
+    .social-bar{ flex-wrap:wrap; }
+}
+
+       /* ===== FOOTER ===== */
 .site-footer {
     background: #111;
     color: #ccc;
@@ -160,19 +207,18 @@
     color: #aaa;
     border-top: 1px solid #222;
 }
-
-    </style>
+</style>
 </head>
 
 <body>
 
-<!-- HEADER (unchanged) -->
+<!-- HEADER -->
 <header class="header">
     <div class="logo"><h1>SUPERFAST ONLINE</h1></div>
     <p class="tagline">बिहार का एक मात्र विश्वसनीय वेबसाइट</p>
 </header>
 
-<!-- NAVBAR (unchanged) -->
+<!-- NAVBAR (UNCHANGED) -->
 <nav class="navbar">
     <a href="index.html" class="active">Home</a>
     <a href="latestjob.html">Latest Jobs</a>
@@ -183,53 +229,58 @@
     <a href="Scholarship.html">Scholarship</a>
 </nav>
 
-<!-- 🔍 SEARCH BAR (NEW) -->
+<!-- SOCIAL BAR -->
+<div class="social-bar">
+    <a href="https://whatsapp.com/channel/0029Vb3fbL5FMqre8vNK5l0M" target="_blank" class="whatsapp">WhatsApp</a>
+    <a href="https://www.youtube.com/@SUPERFASTONLINE" target="_blank" class="youtube">YouTube</a>
+    <a href="https://www.youtube.com/@SUPERFASTONLINE" target="_blank" class="telegram">Telegram</a>
+</div>
+
+<!-- SEARCH BAR -->
 <div class="search-bar">
     <input type="text" id="searchInput" placeholder="यहाँ खोजें (Job / Result / Admit / Yojana)">
 </div>
 
-<!-- 🖼️ SLIDER (NEW) -->
+<!-- SLIDER -->
 <div class="slider">
     <img src="images/slide1.png" class="active">
     <img src="images/slide2.png">
     <img src="images/slide3.png">
 </div>
 
-<!-- ===== YOUR EXISTING SECTIONS (UNCHANGED) ===== -->
-<div class="section">
-    <h2>Admit Card</h2>
-    <div class="card-grid" id="admitCards"></div>
+<!-- CONTENT -->
+<div class="triple-section">
+
+<div class="section-box">
+    <h2>Latest Update</h2>
+    <div id="admitCards"></div>
     <div class="view-more"><a href="Admit.html">View More →</a></div>
 </div>
 
-<div class="section">
+<div class="section-box">
     <h2>Latest Jobs</h2>
-    <div class="card-grid" id="jobCards"></div>
+    <div id="jobCards"></div>
     <div class="view-more"><a href="latestjob.html">View More →</a></div>
 </div>
 
-<div class="section">
-    <h2>Results</h2>
-    <div class="card-grid" id="resultCards"></div>
-    <div class="view-more"><a href="Results.html">View More →</a></div>
-</div>
-
-<div class="section">
+<div class="section-box">
     <h2>University Update</h2>
-    <div class="card-grid" id="universityCards"></div>
+    <div id="universityCards"></div>
     <div class="view-more"><a href="University.html">View More →</a></div>
 </div>
 
-<div class="section">
+<div class="section-box">
     <h2>Sarkari Yojana</h2>
-    <div class="card-grid" id="sarkariCards"></div>
+    <div id="sarkariCards"></div>
     <div class="view-more"><a href="Sarkari.html">View More →</a></div>
 </div>
 
-<div class="section">
+<div class="section-box">
     <h2>Scholarship</h2>
-    <div class="card-grid" id="scholarshipCards"></div>
+    <div id="scholarshipCards"></div>
     <div class="view-more"><a href="Scholarship.html">View More →</a></div>
+</div>
+
 </div>
 
 <!-- FOOTER -->
@@ -277,19 +328,17 @@
     </div>
 </footer>
 
-
-<!-- ===== SCRIPT ===== -->
+<!-- SCRIPT (UNCHANGED) -->
 <script>
-/* CARD LOAD (UNCHANGED) */
-function loadCards(jsonFile, containerId, page) {
+function loadCards(jsonFile, containerId, page){
     fetch(jsonFile)
-    .then(res => res.json())
-    .then(data => {
-        const box = document.getElementById(containerId);
-        data.slice(0,6).forEach(post => {
-            const div = document.createElement("div");
-            div.className = "card searchable";
-            div.innerHTML = `<a href="pages/${page}?id=${post.id}">${post.title}</a>`;
+    .then(res=>res.json())
+    .then(data=>{
+        const box=document.getElementById(containerId);
+        data.slice(0,15).forEach(post=>{
+            const div=document.createElement("div");
+            div.className="card searchable";
+            div.innerHTML=`<a href="pages/${page}?id=${post.id}">${post.title}</a>`;
             box.appendChild(div);
         });
     });
@@ -297,28 +346,24 @@ function loadCards(jsonFile, containerId, page) {
 
 loadCards("data/admitposts.json","admitCards","admitposts.html");
 loadCards("data/posts.json","jobCards","jobposts.html");
-loadCards("data/resultposts.json","resultCards","resultposts.html");
 loadCards("data/universityposts.json","universityCards","universityposts.html");
 loadCards("data/sarkariposts.json","sarkariCards","sarkariposts.html");
 loadCards("data/scholarship.json","scholarshipCards","scholarshipposts.html");
 
-/* 🔍 SEARCH FUNCTION */
-document.getElementById("searchInput").addEventListener("keyup", function(){
-    const value = this.value.toLowerCase();
-    document.querySelectorAll(".searchable").forEach(card=>{
-        card.style.display = card.innerText.toLowerCase().includes(value)
-            ? "block" : "none";
+document.getElementById("searchInput").addEventListener("keyup",function(){
+    const v=this.value.toLowerCase();
+    document.querySelectorAll(".searchable").forEach(c=>{
+        c.style.display=c.innerText.toLowerCase().includes(v)?"block":"none";
     });
 });
 
-/* 🖼️ SLIDER */
-let slideIndex = 0;
-const slides = document.querySelectorAll(".slider img");
+let i=0;
+const slides=document.querySelectorAll(".slider img");
 setInterval(()=>{
-    slides.forEach(img=>img.classList.remove("active"));
-    slides[slideIndex].classList.add("active");
-    slideIndex = (slideIndex + 1) % slides.length;
-}, 3000);
+    slides.forEach(s=>s.classList.remove("active"));
+    slides[i].classList.add("active");
+    i=(i+1)%slides.length;
+},3000);
 </script>
 
 </body>

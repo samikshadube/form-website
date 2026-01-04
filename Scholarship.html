@@ -258,7 +258,6 @@
 
 
 
-<!-- SCRIPT -->
 <script>
 fetch("data/scholarship.json")
   .then(response => response.json())
@@ -267,9 +266,9 @@ fetch("data/scholarship.json")
     const admitList = document.getElementById("admitList");
     const recentList = document.getElementById("recentList");
 
-    data.forEach(post => {
+    data.forEach((post, index) => {
 
-        // LEFT LIST (Admit Card)
+        /* ===== LEFT LIST (NO LIMIT) ===== */
         const li1 = document.createElement("li");
         li1.innerHTML = `
             <a href="pages/scholarshipposts.html?id=${post.id}">
@@ -278,14 +277,16 @@ fetch("data/scholarship.json")
         `;
         admitList.appendChild(li1);
 
-        // RIGHT LIST (Recent Post)
-        const li2 = document.createElement("li");
-        li2.innerHTML = `
-            <a href="pages/scholarshipposts.html?id=${post.id}">
-                ${post.title}
-            </a>
-        `;
-        recentList.appendChild(li2);
+        /* ===== RIGHT LIST (LIMIT 5) ===== */
+        if(index < 5){
+            const li2 = document.createElement("li");
+            li2.innerHTML = `
+                <a href="pages/scholarshipposts.html?id=${post.id}">
+                    ${post.title}
+                </a>
+            `;
+            recentList.appendChild(li2);
+        }
     });
 
   })
@@ -293,6 +294,7 @@ fetch("data/scholarship.json")
     console.error("Error loading data:", error);
   });
 </script>
+
 
 </body>
 </html>
