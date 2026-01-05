@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Superfast Online – Results</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="latestjob.css">
 
     <style>
+        .header{
+    text-align:center;
+    padding:25px 20px;
+}
+body{
+    font-family: 'Poppins','Noto Sans Devanagari', sans-serif;
+}
+
+
+.logo{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+}
+
+.site-logo{
+    width:120px;        /* adjust if needed */
+    height:auto;       /* keeps original ratio */
+    object-fit:contain;
+}
+
+.logo h1{
+    margin:0;
+    font-size:32px;
+    font-weight:700;
+}
         /* Basic link styling if CSS missing */
         .list li a {
             text-decoration: none;
@@ -93,11 +122,11 @@
 <!-- HEADER -->
 <header class="header">
     <div class="logo">
+        <img src="images/logo.png" alt="SUPERFAST ONLINE Logo" class="site-logo">
         <h1>SUPERFAST ONLINE</h1>
     </div>
     <p class="tagline">बिहार का एक मात्र विश्वसनीय वेबसाइट</p>
 </header>
-
 <!-- NAVBAR -->
 <nav class="navbar">
     <a href="index.html" >Home</a>

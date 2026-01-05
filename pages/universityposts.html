@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>University Update | Online Update STM</title>
+<title>Post Details | Online Update STM</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 
 <style>
 :root{
@@ -12,64 +14,188 @@
     --light:#f9f9f9;
     --border:#e0e0e0;
 }
+
 *{box-sizing:border-box}
+
 body{
-    font-family:"Segoe UI",Arial,sans-serif;
+ 
+    font-family: 'Poppins','Noto Sans Devanagari', sans-serif;
     background:var(--light);
-    margin:0;color:#222;line-height:1.7;
+    margin:0;
+    color:#222;
+    line-height:1.7;
 }
+
+/* ===== HEADER (FIXED & PROFESSIONAL) ===== */
 header{
-    background:var(--primary);
-    color:#fff;padding:18px 12px;text-align:center;
+    background:linear-gradient(90deg,  #ff7373, #327dff);
+    color:#fff;
+    padding:14px 20px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.15);
 }
+
+.header-inner{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.site-logo{
+    width:90px;
+    height:auto;
+    object-fit:contain;
+}
+
+.logo-text h1{
+    margin:0;
+    font-size:24px;
+    font-weight:700;
+    letter-spacing:.5px;
+}
+
+.logo-text p{
+    margin:2px 0 0;
+    font-size:13px;
+    opacity:.9;
+}
+
+/* NAV */
 nav{
     background:var(--dark);
     padding:10px;
-    display:flex;flex-wrap:wrap;justify-content:center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
 }
 nav a{
-    color:#fff;margin:4px 6px;text-decoration:none;
-    padding:6px 12px;border-radius:4px;font-size:14px;
+    color:#fff;
+    margin:4px 6px;
+    text-decoration:none;
+    padding:6px 12px;
+    border-radius:4px;
+    font-size:14px;
 }
-nav a:hover,nav a.active{background:var(--primary)}
+nav a:hover,
+nav a.active{
+    background:var(--primary);
+}
+
+/* LAYOUT */
 .container{
-    max-width:1200px;margin:20px auto;
-    display:flex;gap:20px;padding:0 15px;
+    max-width:1200px;
+    margin:20px auto;
+    display:flex;
+    gap:20px;
+    padding:0 15px;
 }
-.left{flex:3;background:#fff;padding:22px;border-radius:8px}
-.right{flex:1;background:#fff;padding:18px;border-radius:8px}
+.left{
+    flex:3;
+    background:#fff;
+    padding:22px;
+    border-radius:8px;
+}
+.right{
+    flex:1;
+    background:#fff;
+    padding:18px;
+    border-radius:8px;
+}
+
+/* HEADINGS */
 h1{color:var(--primary);font-size:26px}
 h2{
-    color:var(--primary);margin-top:30px;
-    font-size:20px;border-left:4px solid var(--primary);
+    color:var(--primary);
+    margin-top:30px;
+    font-size:20px;
+    border-left:4px solid var(--primary);
     padding-left:10px;
 }
+h3{color:var(--primary)}
+
+/* THUMBNAIL */
 .post-thumb{
-    width:100%;border-radius:8px;margin:15px 0 20px;
+    width:100%;
+    border-radius:8px;
+    margin:15px 0 20px;
 }
+
+/* TEXT */
+p{margin:12px 0;font-size:15px}
+
+/* TABLE */
 table{
-    width:100%;border-collapse:collapse;margin-top:15px;
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+    background:#fff;
 }
 th,td{
     border:1px solid var(--border);
-    padding:10px;font-size:14px;
+    padding:10px;
+    font-size:14px;
 }
-th{background:#f5f5f5;width:38%}
+th{
+    background:#f5f5f5;
+    width:38%;
+    font-weight:600;
+}
+
+/* LISTS */
+ul,ol{padding-left:20px}
+li{margin:6px 0}
+
+/* OTHER POSTS */
 .other-post{
     border-bottom:1px solid var(--border);
     padding:10px 0;
 }
-.other-post a{text-decoration:none;color:#222}
+.other-post:last-child{border-bottom:none}
+.other-post a{
+    text-decoration:none;
+    color:#222;
+}
 .other-post a:hover{color:var(--primary)}
-iframe{margin-top:25px;border-radius:8px}
-/* ===== FOOTER ===== */
+.other-post small{color:#666}
+
+/* COMMENT BOX */
+.comment-box{
+    margin-top:30px;
+}
+.comment-box textarea{
+    width:100%;
+    height:120px;
+    padding:10px;
+    border:1px solid var(--border);
+    border-radius:6px;
+    resize:vertical;
+}
+.comment-box button{
+    margin-top:10px;
+    background:var(--primary);
+    color:#fff;
+    border:none;
+    padding:10px 18px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+/* FOOTER */
 .site-footer {
     background: #111;
     color: #ccc;
     padding-top: 40px;
     font-size: 14px;
 }
-
 .footer-container {
     max-width: 1200px;
     margin: auto;
@@ -78,69 +204,35 @@ iframe{margin-top:25px;border-radius:8px}
     gap: 30px;
     padding: 0 20px 30px;
 }
-
-.footer-col h3 {
-    color: #fff;
-    margin-bottom: 15px;
-    font-size: 18px;
-    position: relative;
-}
-
-.footer-col h3::after {
-    content: "";
-    width: 40px;
-    height: 2px;
-    background: #d40000;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-}
-
-.footer-col p {
-    line-height: 1.6;
-    color: #bbb;
-}
-
-.footer-col ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-col ul li {
-    margin-bottom: 8px;
-}
-
-.footer-col ul li a {
-    color: #ccc;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.footer-col ul li a:hover {
-    color: #d40000;
-    padding-left: 5px;
-}
-
 .footer-bottom {
     background: #000;
     text-align: center;
     padding: 12px;
     font-size: 13px;
     color: #aaa;
-    border-top: 1px solid #222;
 }
 
+/* RESPONSIVE */
 @media(max-width:900px){
     .container{flex-direction:column}
+    .header-inner{flex-direction:column;align-items:flex-start}
 }
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
-    <h4>SUPER FAST ONLINE</h4>
-    <p>बिहार का एक मात्र विश्वसनीय वेबसाइट</p>
+    <div class="header-inner">
+        <div class="logo">
+            <img src="../images/logo.png" alt="SUPERFAST ONLINE Logo" class="site-logo">
+            <div class="logo-text">
+                <h1>SUPERFAST ONLINE</h1>
+                <p>बिहार का एक मात्र विश्वसनीय वेबसाइट</p>
+            </div>
+        </div>
+    </div>
 </header>
 
 <nav>
