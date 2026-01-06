@@ -396,6 +396,11 @@ body{
     <div id="scholarshipCards"></div>
     <div class="view-more"><a href="Scholarship.html">View More →</a></div>
 </div>
+<div class="section-box">
+    <h2>Results</h2>
+    <div id="resultCards"></div>
+    <div class="view-more"><a href="Results.html">View More →</a></div>
+</div>
 
 </div>
 
@@ -465,6 +470,8 @@ loadCards("data/posts.json","jobCards","jobposts.html");
 loadCards("data/universityposts.json","universityCards","universityposts.html");
 loadCards("data/sarkariposts.json","sarkariCards","sarkariposts.html");
 loadCards("data/scholarship.json","scholarshipCards","scholarshipposts.html");
+loadCards("data/resultposts.json","resultCards","resultposts.html");
+
 
 document.getElementById("searchInput").addEventListener("keyup",function(){
     const v=this.value.toLowerCase();
