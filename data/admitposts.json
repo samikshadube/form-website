@@ -1,5 +1,41 @@
 [
   {
+    "id": "LNMU PART 1 ADMIT CARD",
+    "title": "LNMU PART 1 ADMIT CARD",
+    "post": "बिहार पुलिस कांस्टेबल भर्ती परीक्षा 2025 का एडमिट कार्ड जारी कर दिया गया है।",
+    "description": "जो उम्मीदवार इस भर्ती परीक्षा में शामिल होने वाले हैं, वे आधिकारिक वेबसाइट से अपना एडमिट कार्ड डाउनलोड कर सकते हैं।",
+    "thumbnail": "../images/t2.png",
+
+    "articleType": "Admit Card",
+    "advertisementNumber": "BPSSC/Constable/01/2025",
+    "postName": "Police Constable",
+    "totalPosts": "21391",
+    "notificationDate": "10 January 2025",
+    "applicationStartDate": "20 January 2025",
+    "applicationEndDate": "20 February 2025",
+    "applicationMode": "Online",
+
+    "officialWebsite": "https://bpssc.bih.nic.in",
+
+    "documentsHeading": "Admit Card Download हेतु आवश्यक दस्तावेज",
+    "documents": [
+      "Registration Number / Roll Number",
+      "Date of Birth",
+      "Valid Photo ID Proof",
+      "Internet Connection"
+    ],
+
+    "selectionHeading": "परीक्षा प्रक्रिया",
+    "selectionProcess": [
+      "Written Examination",
+      "Physical Efficiency Test (PET)",
+      "Document Verification"
+    ],
+
+    "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "excerpt": "Bihar Police Constable Admit Card 2025 Download Link"
+  },
+  {
     "id": "shivam",
     "title": "Shivam",
     "post": "बिहार पुलिस कांस्टेबल भर्ती परीक्षा 2025 का एडमिट कार्ड जारी कर दिया गया है।",
