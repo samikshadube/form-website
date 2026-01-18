@@ -1,4 +1,34 @@
-[
+[  {
+    "id": "r1",
+    "title": "Bihar Board Result 12th 2025",
+    "post": "बिहार बोर्ड इंटरमीडिएट परीक्षा 2025 का रिजल्ट आधिकारिक रूप से जारी कर दिया गया है।",
+    "description": "BSEB द्वारा कक्षा 12वीं आर्ट्स, साइंस और कॉमर्स का रिजल्ट जारी। छात्र नीचे दिए गए लिंक से अपना परिणाम देख सकते हैं।",
+    "excerpt": "Bihar Board Inter Result 2025 Released",
+    "thumbnail": "../images/t3.png",
+
+    "articleType": "Board Result",
+    "boardName": "Bihar School Examination Board (BSEB)",
+    "totalCandidates": "13.5 लाख",
+    "examDate": "01 Feb 2025 – 15 Feb 2025",
+    "resultDate": "25 March 2025",
+    "officialWebsite": "https://results.biharboardonline.com",
+
+    "documentsHeading": "रिजल्ट चेक करने के लिए आवश्यक विवरण",
+    "documents": [
+      "Roll Code",
+      "Roll Number",
+      "Date of Birth"
+    ],
+
+    "selectionHeading": "महत्वपूर्ण निर्देश",
+    "instructions": [
+      "ऑनलाइन रिजल्ट प्रोविजनल है",
+      "ओरिजिनल मार्कशीट स्कूल से प्राप्त करें",
+      "गलती होने पर बोर्ड से संपर्क करें"
+    ],
+
+    "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
   {
     "id": "r1",
     "title": "Bihar Board 12th Result 2025",
