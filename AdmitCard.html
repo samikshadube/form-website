@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>Superfast Online– Admit Card</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="latestjob.css">
+
+    <style>
+        .header{
+    text-align:center;
+    padding:25px 20px;
+}
+body{
+    font-family: 'Poppins','Noto Sans Devanagari', sans-serif;
+}
+
+
+.logo{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+}
+
+.site-logo{
+    width:120px;        /* adjust if needed */
+    height:auto;       /* keeps original ratio */
+    object-fit:contain;
+}
+
+.logo h1{
+    margin:0;
+    font-size:34px;
+    font-weight:700;
+}
+.tagline{
+    
+    margin-top:4px;
+    font-size:16px;
+    color:#ffff
+    
+}
+        /* Basic link styling if CSS missing */
+        .list li a {
+            text-decoration: none;
+            color: #000;
+            display: block;
+            padding: 6px;
+        }
+
+        .list li a:hover {
+            color: #d40000;
+            text-decoration: underline;
+        }
+        /* ===== FOOTER ===== */
+.site-footer {
+    background: #111;
+    color: #ccc;
+    padding-top: 40px;
+    font-size: 14px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 20px 30px;
+}
+
+.footer-col h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 18px;
+    position: relative;
+}
+
+.footer-col h3::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background: #d40000;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+.footer-col p {
+    line-height: 1.6;
+    color: #bbb;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #d40000;
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    background: #000;
+    text-align: center;
+    padding: 12px;
+    font-size: 13px;
+    color: #aaa;
+    border-top: 1px solid #222;
+}
+
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="logo">
+        <img src="images/logo.png" alt="SUPERFAST ONLINE Logo" class="site-logo">
+        <h1>SUPERFAST ONLINE</h1>
+    </div>
+    <p class="tagline">बिहार का एक मात्र विश्वसनीय वेबसाइट</p>
+</header>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a href="index.html" >Home</a>
+    <a href="./latestjob.html">Latest Jobs</a>
+    <a href="./Admit.html" class="active">Admit Card</a>
+    <a href="./Results.html">Results</a>
+    <a href="./University.html">University Update</a>
+    <a href="./Sarkari.html">Sarkari Yojana</a>
+    <a href="./Scholarship.html">Scholarship</a>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <!-- LEFT SECTION -->
+    <div class="left">
+        <div class="section-title">Admit Card</div>
+        <ul class="list" id="admitList">
+            <!-- DATA LOADS FROM JSON -->
+        </ul>
+    </div>
+
+    <!-- RIGHT SECTION -->
+    <div class="right">
+        <div class="section-title">Recent Post</div>
+        <ul class="list" id="recentList">
+            <!-- DATA LOADS FROM JSON -->
+        </ul>
+    </div>
+
+</div>
+
+<!-- DISCLAIMER -->
+<div class="disclaimer-wrapper">
+
+    <h2 class="disclaimer-heading">Disclaimer for superfastonline.com</h2>
+
+    <p><strong>प्रिय पाठकगण,</strong></p>
+
+    <p>
+        <strong>superfastonline.com</strong> एक सरकारी वेबसाइट नहीं है और इसका किसी सरकारी मंत्रालय या विभाग से
+        कोई संबंध नहीं है।
+    </p>
+
+    <p>
+        यह ब्लॉग एक व्यक्तिगत प्रयास है, जिसे उन लोगों की सहायता के लिए बनाया गया है जो सरकारी योजनाओं और
+        अन्य शैक्षिक जानकारियों के बारे में सटीक और अपडेटेड जानकारी प्राप्त करना चाहते हैं।
+        हमारी टीम यह सुनिश्चित करने का प्रयास करती है कि हर लेख में आपको सटीक जानकारी मिले,
+        लेकिन हम त्रुटियों की संभावना से इंकार नहीं कर सकते।
+    </p>
+
+    <p>
+        हमारे सभी लेखों में संबंधित योजना की <strong>आधिकारिक वेबसाइट</strong> का लिंक दिया गया है और
+        हम आपसे अनुरोध करते हैं कि जानकारी को सत्यापित करने के लिए हमेशा आधिकारिक वेबसाइट का ही संदर्भ लें।
+        यदि आपको किसी लेख में कोई त्रुटि मिले, तो कृपया हमें सूचित करें ताकि हम उसे सुधार सकें।
+    </p>
+
+    <p>
+        इस वेबसाइट के माध्यम से कभी भी किसी प्रकार की <strong>पैसे की मांग नहीं</strong> की जाती।
+        यह वेबसाइट पूर्णतः <strong>निःशुल्क सूचना</strong> प्रदान करती है।
+        हमारा उद्देश्य केवल जानकारी को सरल तरीके से आप तक पहुँचाना है।
+        कृपया किसी भी निर्णय से पहले जानकारी की स्वयं जाँच अवश्य करें।
+    </p>
+
+    <hr>
+
+    <h1 class="sub-heading">
+        superfastonline.com पर प्रदान की जाने वाली जानकारियों का स्रोत / Source क्या है?
+    </h1>
+
+    <ul class="disclaimer-list">
+        <li>
+            superfastonline.com पर प्रकाशित सभी जानकारियाँ पूरी जिम्मेदारी और सावधानी के साथ प्रस्तुत की जाती हैं।
+        </li>
+        <li>
+            किसी भी प्रकार की सूचना बिना पुख्ता प्रमाण (Solid Evidence) के प्रकाशित नहीं की जाती।
+        </li>
+        <li>
+            प्रत्येक लेख का स्रोत संबंधित विभाग की
+            <strong>Official Website, Print Media, Authenticated News Paper Cutting</strong>
+            एवं अन्य 100% विश्वसनीय स्रोत होते हैं।
+        </li>
+        <li>
+            हर लेख के अंत में <strong>Quick Links</strong> दिए जाते हैं, जिससे आप
+            Official Source, Advertisement, Direct Application Link तक पहुँच सकें।
+        </li>
+    </ul>
+
+    <hr>
+
+    <h3 class="sub-heading">
+        क्या superfastonline.com अपनी वेबसाइट पर प्रकाशित सामग्री / Content की जिम्मेदारी लेता है?
+    </h3>
+
+    <ul class="disclaimer-list">
+        <li>
+            हमारा पूरा प्रयास रहता है कि आपको 100% शुद्ध एवं प्रमाणिक जानकारी प्रदान की जाए।
+        </li>
+        <li>
+            फिर भी हम आपसे अनुरोध करते हैं कि किसी भी महत्वपूर्ण निर्णय से पहले
+            जानकारी को अपने स्तर पर सत्यापित अवश्य करें।
+        </li>
+        <li>
+            superfastonline.com केवल एक सूचना प्रदान करने वाला प्लेटफॉर्म है,
+            अंतिम निर्णय लेने से पहले आधिकारिक वेबसाइट पर जानकारी की पुष्टि करना आवश्यक है।
+        </li>
+    </ul>
+
+</div>
+
+</body>
+</html>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <!-- LEFT -->
+        <div class="footer-col">
+            <h3>Superfast Online</h3>
+            <p>
+                Superfast Online एक सूचना आधारित प्लेटफॉर्म है, जहाँ
+                सरकारी नौकरी, रिजल्ट, एडमिट कार्ड, योजना और स्कॉलरशिप
+                से जुड़ी सटीक व अपडेटेड जानकारी प्रदान की जाती है।
+            </p>
+        </div>
+
+        <!-- MIDDLE -->
+        <div class="footer-col">
+            <h3>महत्वपूर्ण लिंक</h3>
+            <ul>
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="latestjob.html">Latest Jobs</a></li>
+                <li><a href="Admit.html">Admit Card</a></li>
+                <li><a href="Results.html">Results</a></li>
+                <li><a href="Sarkari.html">Sarkari Yojana</a></li>
+                <li><a href="Scholarship.html">Scholarship</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+        © 2025 <strong>superfastonline.com</strong> | All Rights Reserved
+    </div>
+</footer>
+
+
+
+
+<!-- SCRIPT -->
+
+<script>
+fetch("data/admitposts.json")
+  .then(response => response.json())
+  .then(data => {
+
+    const admitList = document.getElementById("admitList");
+    const recentList = document.getElementById("recentList");
+
+    data.forEach((post, index) => {
+
+        /* ===== LEFT LIST (NO LIMIT) ===== */
+        const li1 = document.createElement("li");
+        li1.innerHTML = `
+            <a href="pages/admitposts.html?id=${post.id}">
+                ${post.title}
+            </a>
+        `;
+        admitList.appendChild(li1);
+
+        /* ===== RIGHT LIST (LIMIT 5) ===== */
+        if(index < 5){
+            const li2 = document.createElement("li");
+            li2.innerHTML = `
+                <a href="pages/admitposts.html?id=${post.id}">
+                    ${post.title}
+                </a>
+            `;
+            recentList.appendChild(li2);
+        }
+    });
+
+  })
+  .catch(error => {
+    console.error("Error loading data:", error);
+  });
+</script>
+
+
+</body>
+</html>
